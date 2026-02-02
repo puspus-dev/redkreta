@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedKréta</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #1d3557;
+    }
+    h1 {
+        color: #e63946;
+        font-size: 3rem;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+    .buttons a {
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        background: #1d3557;
+        color: white;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+    .buttons a:hover {
+        background: #457b9d;
+    }
+    .footer {
+        margin-top: 3em;
+        font-size: 0.9rem;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+<h1>RedKréta</h1>
+<p>Üdv a RedKréta rendszerben! Válassz egy felületet:</p>
+
+<div class="buttons">
+    <a href="/admin/schools">Admin Dashboard</a>
+    <a href="/teacher/grades">Tanár Felület</a>
+    <a href="https://app.supabase.io/project" target="_blank">Backend (Supabase)</a>
+    <a href="#">Mobil App</a>
+</div>
+
+<p class="footer">Ez a statikus landing oldal Vercel Free Plan-on fut, nem PHP. A backend a Supabase.</p>
+
+</body>
+</html>
